@@ -1,0 +1,26 @@
+package com.SMS_backend.entity;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+@Entity
+public class Student {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @NotBlank(message = "Name is required")
+    private String name;
+
+    @Email(message = "Email should be valid")
+    private String email;
+
+    @NotBlank(message = "Course is required")
+    private String course;
+
+    private int age;
+
+    // Getters and Setters
+}

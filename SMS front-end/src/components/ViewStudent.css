@@ -1,0 +1,119 @@
+/* ViewStudent.css */
+.view-student-wrapper {
+  max-width: 760px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.view-student-card {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.2);
+  transition: transform .2s ease, box-shadow .25s ease;
+}
+
+.view-student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 35px 80px -5px rgba(0, 0, 0, 0.25);
+}
+
+.view-student-header {
+  background: linear-gradient(135deg, #5a8dee 0%, #3c6ef5 100%);
+  padding: 1rem 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 3px solid rgba(255,255,255,0.2);
+}
+
+.view-student-header h3 {
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  flex: 1;
+}
+
+.view-student-header .id-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.view-student-body {
+  padding: 1.5rem 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem 2rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  color: #666;
+}
+
+.field-group .value {
+  background: #f7f9fc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e3e8ef;
+  font-size: 1rem;
+  color: #333;
+}
+
+.view-student-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #f0f2f7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.view-student-footer .left,
+.view-student-footer .right {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.btn-back {
+  background: #f0f2f7;
+  color: #333;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 0.65rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter .15s ease;
+}
+
+.btn-back:hover {
+  filter: brightness(1.05);
+}
+
+@media (max-width: 768px) {
+  .view-student-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .view-student-header h3 {
+    font-size: 1.5rem;
+  }
+}

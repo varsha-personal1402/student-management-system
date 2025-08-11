@@ -1,0 +1,28 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Eclipse workspace metadata (outside project usually, but in case)
+.metadata/
+
+# Maven target directory
+target/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA files (if you ever open it there)
+.idea/
+*.iml
+
+# Build artifacts
+bin/
+out/
+
+# Spring Boot dev tools
+.spring-boot-devtools.properties

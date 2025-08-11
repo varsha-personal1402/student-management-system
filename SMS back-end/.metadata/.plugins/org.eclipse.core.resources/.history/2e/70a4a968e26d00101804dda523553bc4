@@ -1,0 +1,5 @@
+package com.SMS_backend.config;
+
+public class webConfig {
+
+}
